@@ -80,6 +80,24 @@ header label:hover{
     margin: 0;
   }
 }
+main{
+  width: auto;
+  height: 80vh;
+  font: 50%;
+  background-image:linear-gradient(to left, hsla(210, 30%, 24%, 0.808), hsla(204, 64%, 44%, 0.575)),url(../src/imagenes/thimo-pedersen-dip9IIwUK6w-unsplash.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+.containerBusqueda{
+  width:auto;
+}
+.formulario-busqueda{
+  width:auto;
+  max-width: 100%;
+}
 
 .img-footer{
   width: 100%;
