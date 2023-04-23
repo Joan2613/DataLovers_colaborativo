@@ -1,0 +1,241 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body{
+  width:auto;
+  height: auto;
+  font-family: 'Josefin Slab', serif;
+}
+
+:root{
+  scroll-behavior: smooth;
+}
+
+header{
+  width: 100%;
+  background: #4e94ab;
+}
+
+#btn-menu{
+  display: none;
+}
+
+header label{
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+
+header label:hover{
+  cursor: pointer;
+  background: rgb(0,0,0,0.3);
+}
+
+.menu ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /*posiciona el elemento hacia la derecha*/
+}
+
+.menu li{
+  border-right: 1px solid white;
+}
+
+.menu li:hover{
+  background: rgb(0,0,0,0.3);
+}
+
+.menu li a{
+  display: block;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+}
+
+@media(max-width:868px){
+  header label{
+    display: block;
+  }
+  .menu{
+    position: absolute;
+    background: #4e94ab;
+    width: 50%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+  .menu ul{
+    flex-direction: column;
+  }
+  .menu li{
+    border-top: 1px solid white;
+  }
+  #btn-menu:checked ~ .menu{
+    margin: 0;
+  }
+}
+
+.img-footer{
+  width: 100%;
+  height:80vh;
+  display: inline-flex;
+  flex-direction: wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+.redSocial{
+  width: 10%;
+}
+
+/*pokedex.html*/
+.contenedor{
+  width: 100%;
+  height: auto;
+  margin:20px 20px 20px 50px;
+}
+
+.imagen{
+  width: 50%;
+  background-color: cyan;
+  margin: px 50px 75px 100px;
+}
+
+.tarjeta{
+    display: inline-grid;
+    width: 25%;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
+    grid-template-columns: auto;
+    height: 40vh;
+    background-color: rgb(210, 255,226);
+    margin: 0px 20px 20px 50px;
+    border-style: hidden;
+    border-radius: radius;
+
+  }
+
+  /*modal*/
+.modal{
+  display: flex; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 1s;
+  transform: translateY(0%);
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 25%; /* Full width */
+  height: 60%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgb(198, 251, 255); /* Black w/ opacity */
+  
+
+  
+}
+
+
+.modal-content {
+  background-color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*main{
+  width: 100%;
+  height: 80vh;
+  font: 50%;
+  background-image:linear-gradient(to left, hsla(210, 30%, 24%, 0.808), hsla(204, 64%, 44%, 0.575)),url(../src/imagenes/thimo-pedersen-dip9IIwUK6w-unsplash.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+h1{
+  padding: 0;
+  font-size: 100px;
+  position: center;
+  top: 50%;
+  left: 50%;
+  color:white ;
+ }
+ .container{
+  width: 100%;
+  margin: 0;
+}
+nav{
+  font-size: 30px;
+  position:relative;
+  top: 0;
+  height: 30vh;
+  width: 50%;
+  right: 0%;
+}
+.navegador {
+  width: 50%;
+  font-size: 30px;
+  top: 0%;
+  float: right;
+  clear: right;
+  bottom: 30%;
+  padding: 60px 0;
+}
+.logoimg{
+  width: 50%;
+  height: 30vh;
+  font-size: 30px;
+  top: 0%;
+  float: left;
+  clear: right;
+}
+#logoimg{
+  width: 50%;
+  height: 28vh;
+  top: 0%;
+}
+.imagen{
+  width: 20%;
+  height: 70%;
+}
+#imagen{
+  padding:10% ;
+  width: 40vh;
+  height: 100px;
+  flex-direction: center;
+  top: 50%;
+  .logoimagen{
+  width: 15%;
+  height: 15%;
+  font-size: 30px;
+  top: 0%;
+  float: left;
+  clear: right;
+}
+}*/

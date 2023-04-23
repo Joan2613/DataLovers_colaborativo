@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id='btn-menu'>
+      <label for="btn-menu"><img src="../src/imagenes/imagen menu.jpg" alt=""></label>
+      <!--<div class="logo"><img class="logoimagen" src="../src/imagenes/logo pokemon.png" alt=""></div>-->
+      <nav class="menu">
+        <ul>
+          <li><a href="#contenedor">Pokédex</a></li>
+          <li><a href="#tipos">Tipos</a></li>
+          <li><a href="">Top 10</a></li>
+        </ul>
+        </nav>
+    </header>
+    <br><br><br>
+    <main>
+      <div class="containerBusqueda" id="containerBusqueda">
+        <input type="text" id="filtrarBusqueda" placeholder="Escribe el nombre de tu personaje"
+          class="formulario-busqueda">
+        <p id=listadodebusqueda></p>
+        <!-- <button class="botonBuscar" id="boton">Buscar</button> tenemos que quitar el css asociado al boton -->
+      </div>
+      <div class="contenedor" id="contenedor"></div>
+      <div class="contenedor" id="tipos"></div>
+      <div id='miModal' class="modal">
+        <div>
+          <span id="cerrar" class="close">&times;</span>
+          <p></p>
+        </div>
+      
+        <!--<h2>hola mundo</h2>
+        <div id="home" class="page">
+        <h1>Bienvenido a Pokemon Go</h1>
+        <button id="informacion">Ver más</button>
+      </div>
+      <div id="pokedex" class="page"> </div>-->
+    </main>
+    <footer class="container">
+      <div class="img-footer">
+        <img  id="Whatsapp" class="redSocial" src="../src/imagenes/Whatsapp.jpg"  alt="logo Whatsapp">
+        <img  id="facebook" class="redSocial"src="../src/imagenes/facebook.jpg"  alt="logo facebook">
+        <img  id="instagram" class="redSocial"src="../src/imagenes/instagram.jpg" alt="logo instagram">
+        <img  id="twitter" class="redSocial" src="../src/imagenes/twitter.jpg"   alt="logo twitter">
+        <h3>By Carol Marulanda & Susan Saenz</h3>
+      </div>
+    </footer>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
