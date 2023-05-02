@@ -4,7 +4,6 @@ import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 const personajes = data.pokemon;
-console.log(personajes)
 
 // function desplegarPersonajes(){
 //     for()
@@ -84,13 +83,13 @@ function mostrarModal(event){
 }
 
 // //cerrar ventana modal
-// document.getElementById('cerrar').addEventListener('click', cerrarModal);
-// function cerrarModal(){
-//   const modal = document.getElementById("miModal");
-//   const cajitaPokemon = document.getElementById("modalDePokemon");
-//   modal.removeChild(cajitaPokemon);
-//   modal.style.display ='none';
-// }
+document.getElementById('cerrar').addEventListener('click', cerrarModal);
+function cerrarModal(){
+    const modal = document.getElementById("miModal");
+    const cajitaPokemon = document.getElementById("modalDePokemon");
+    modal.removeChild(cajitaPokemon);
+    modal.style.display ='none';
+}
 
 // const barraDeBusquedaInput = document.getElementById('filtrarBusqueda');
 // barraDeBusquedaInput.addEventListener('keyup', realizarBusqueda);

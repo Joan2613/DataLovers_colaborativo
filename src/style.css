@@ -114,8 +114,8 @@ header label:hover{
     align-items:center;
     box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
     grid-template-columns: auto;
-    height: 40vh;
-    background-color: rgb(210, 255,226);
+    height: 25vh;
+    background-color: #2a75bb;
     margin: 0px 20px 20px 50px;
     border-style: hidden;
     border-radius: radius;
