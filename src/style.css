@@ -80,6 +80,46 @@ header label:hover{
     margin: 0;
   }
 }
+main{
+  width: auto;
+  height: 80vh;
+  font: 50%;
+  background-image:linear-gradient(to left, hsla(210, 30%, 24%, 0.808), hsla(204, 64%, 44%, 0.575)),url(../src/imagenes/thimo-pedersen-dip9IIwUK6w-unsplash.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+.formulario-busqueda {
+  box-sizing: content-box;
+  padding: 8px;
+  border: 1px solid #ccc;/*#FF00FF*/
+  font-size: 16px;
+  width: calc(padding + 100%);
+}
+
+.formulario-busqueda:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.formulario-busqueda::placeholder {
+  color: #ccc;
+}
+
+.formulario-busqueda:placeholder-shown {
+  width: calc(8px + 20%);
+}
+
+.botonBuscar{
+  box-sizing: content-box;
+  padding: 2px;
+  border: 1px solid #ccc;/*#FF00FF*/
+  font-size: 15px;
+  width: calc(padding + 100%);
+}
+
 
 .img-footer{
   width: 100%;
