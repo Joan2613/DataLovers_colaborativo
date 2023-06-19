@@ -52,6 +52,7 @@ function mostrarModal(event){
     const perfilPokemon = event.currentTarget.id;
     const encontrandoPokemon = personajes.find(elemento => elemento.num == perfilPokemon);
     const cajitaPokemon = document.createElement('div');
+    const cerrarCajita = document.createElement('span');
     const imgPokemon = document.createElement('img');
     const acercaDelPokemon = document.createElement('p');
     const nombrePokemon = document.createElement('p');
@@ -59,6 +60,7 @@ function mostrarModal(event){
     const tipoPokemon = document.createElement('p');
     const debilidadPokemon = document.createElement('p');
     // const evolucionPokemon = document.createElement('p');
+    
     
     cajitaPokemon.id = 'modalDePokemon';
     cajitaPokemon.innerHTML = encontrandoPokemon.num;
@@ -68,27 +70,41 @@ function mostrarModal(event){
     pesoPokemon.innerHTML = encontrandoPokemon.size.weight;
     tipoPokemon.innerHTML = encontrandoPokemon.type
     debilidadPokemon.innerHTML = encontrandoPokemon.weaknesses;
+    cerrarCajita.id = 'cerrar';
+    cerrarCajita.className = 'close';
+    cerrarCajita.innerHTML = '&times;';
 
-    cajitaPokemon.appendChild(imgPokemon);
-    cajitaPokemon.appendChild(nombrePokemon);
-    cajitaPokemon.appendChild(acercaDelPokemon);
-    cajitaPokemon.appendChild(pesoPokemon);
-    cajitaPokemon.appendChild(tipoPokemon);
-    cajitaPokemon.appendChild(debilidadPokemon);
-    
     let modal = document.getElementById('miModal');
-    modal.style.display='block';
+
+    modal.innerHTML = '';
+
+    const elements = [cerrarCajita, imgPokemon, nombrePokemon, acercaDelPokemon, pesoPokemon, tipoPokemon, debilidadPokemon];
+
+    elements.forEach((element) => {
+    cajitaPokemon.appendChild(element);
+    });
     
+    
+    modal.style.display='block';
     modal.appendChild(cajitaPokemon);
+    
+    
+    document.getElementById('cerrar').addEventListener('click', cerrarModal);
+    
+    
 }
 
 // //cerrar ventana modal
-document.getElementById('cerrar').addEventListener('click', cerrarModal);
+
+    
+
 function cerrarModal(){
     const modal = document.getElementById("miModal");
     const cajitaPokemon = document.getElementById("modalDePokemon");
-    modal.removeChild(cajitaPokemon);
-    modal.style.display ='none';
+    if (modal && cajitaPokemon) {
+        modal.style.display = 'none';
+        cajitaPokemon.remove();
+    }
 }
 
 // const barraDeBusquedaInput = document.getElementById('filtrarBusqueda');
