@@ -164,18 +164,18 @@ main{
 
   /*modal*/
 .modal{
-  display: flex; /* Hidden by default */
+  display: none; 
   justify-content: center;
   align-items: center;
   text-align: center;
   transition: transform 1s;
   transform: translateY(0%);
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed; 
+  z-index: 1; 
   left: 0;
   top: 0;
-  width: 25%; /* Full width */
-  height: 60%; /* Full height */
+  width: 40%; 
+  height: 40%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgb(198, 251, 255); /* Black w/ opacity */
@@ -187,10 +187,10 @@ main{
 
 .modal-content {
   background-color: black;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto; 
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%; 
 }
 
 /* The Close Button */
@@ -206,6 +206,10 @@ main{
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal.hidden {
+  display: none;
 }
 /*main{
   width: 100%;
